@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(163, 193, 201,.3);
+
+}
+.main-container{
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(247, 246, 246, 0.1);
+    width: 90%;
+    height: 350px;
+    margin-top: 35px;
+    border-radius: 10px;
+    box-shadow:7px 7px 8px rgba(120, 139, 151, 0.493),
+                -5px -5px 8px rgb(255, 255, 255);
+    display: inline-flex;
+}
+.content-container{
+    position: relative;
+    background-color: rgba(247, 246, 246, 0.1);
+    box-shadow:3px 3px 8px rgba(120, 139, 151, 0.3),
+                -7px -7px 10px rgb(255, 255, 255);
+    width: 40%;
+    height: 100%;
+    margin: 0 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all 2s;
+    z-index: 5;
+}
+.circles{
+    list-style: none;
+    
+}
+.circles .top-circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    float: right;
+    margin-top: -110px;
+    margin-right: -80px;
+    box-shadow: 5px 5px 5px rgba(128,128,128,.3) inset,
+                -5px -5px 5px rgba(255,255,255,0.5) inset;
+    transition: all 1.8s linear;
+}
+.circles .down-circle{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 270px;
+    margin-left: -100px;
+    box-shadow: 5px 5px 5px rgba(128,128,128,.3) inset,
+                -5px -5px 5px rgba(255,255,255,0.5) inset;
+
+    transition: all 1.8s linear;
+}
+
+.signin-greet, .signup-greet{
+    list-style: none;
+    margin-top: 90px;
+    position: relative;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    transition: all 2s linear;
+}
+
+.signin-greet .greet-header, .signup-greet .greet-header{
+    font-family: 'Poppins',sans-serif;
+    font-size: 24px;
+    margin-top: -30px;
+    font-weight: bold;
+}
+.signin-greet .greet-subheader, .signup-greet .greet-subheader{
+    font-family: "Poppins",sans-serif;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 10px;
+    padding: 0 40px;
+    line-height: 15px;
+    color: rgba(128,128,128,1)
+}
+
+.signinbtn-container, .signupbtn-container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: -40px;
+}
+.signin-ref, .signup-ref{
+    position: relative;
+       
+}
+.signin_refbtn,.signup_refbtn,.signin_btn, .signup_btn, .confirm_signup-btn, .confirm_signin-btn{
+    width: 100px;
+    border-radius: 20px;
+    font-family: "Poppins",sans-serif;
+    font-size: 12px;
+}
+
+.signup-greet{
+    display: none;
+}
+
+.signupbtn-container{
+    display: none;
+}
+@keyframes disappear {
+    0%{
+        opacity: 1;
+    }
+    80%,100%{
+        opacity: 0;
+    }
+}
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    30%,100%{
+        opacity: 1;
+    }
+}
+
+.sign-container{
+    position: relative;
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Poppins",sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition:all 1.7s linear; 
+}
+.signup-content{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+.sign-container h3{
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.sign-container form {
+    margin-top: 20px;
+}
+.sign-container form input{
+    margin-bottom: 7px;
+    background: rgba(247, 246, 246, 0.1);
+    font-size: 12px;
+    outline: none;
+    border: none;
+    width: 280px;
+    height: 30px;
+    padding: 0 30px 0 10px;
+    border-radius: 8px ;
+    box-shadow:3px 3px 3px rgba(120, 139, 151, 0.3) inset,
+                -3px -3px 3px rgb(255, 255, 255) inset;
+}
+.password_key{
+    cursor: pointer;
+    position:absolute;
+    font-size: 14px;
+    margin-left: -25px;
+    margin-top: 5px;
+}
+#signup_validation,.confirm_pass_validator,.signin-validator{
+    color:red;
+    font-size: 10px;
+    float: left;
+    margin-left: 70px;
+}
+
+.confirm_signup-form{
+    display: none;
+}
+
+.confirm_signup-form button{
+    margin-top: 15px;
+}
+.gobacksignup{
+    font-size: 12px;
+    color: black;
+    float: left;
+    margin-left: 60px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.gobacksignup:hover{
+    color: blue;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.signin-content{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   
+}
+.signin-content{
+    display: none;
+}
+#fop{
+    font-size: 14px;
+}
+
