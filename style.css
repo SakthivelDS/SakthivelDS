@@ -443,7 +443,7 @@ body{
 @media (max-width:768px){
     .main-container{
         height: 500px;
-        width: 24em;
+        width: 23em;
     }
     .sign-container form input{
         height: 40px;
