@@ -20,13 +20,14 @@ body {
 body{
     background-color: rgba(163, 193, 201,.3);
     position: relative;
+    
 }
 .main-container{
     padding: 0;
     overflow: hidden;
     position: relative;
     background-color: rgba(247, 246, 246, 0.1);
-    width: 100%;
+    width: 45em;
     height: 350px;
     border-radius: 10px;
     box-shadow:7px 7px 8px rgba(120, 139, 151, 0.493),
@@ -123,6 +124,7 @@ body{
 
 .signup-greet{
     display: none;
+    
 }
 
 .signupbtn-container{
@@ -440,12 +442,7 @@ body{
         height: 370px;
     }
 }
-@media (min-width:768px) and (max-width:1024px){
-    .main-container{
-        height: 23em;
-        width: 50rem;
-    }
-}
+
 @media (max-width:768px){
     .main-container{
         height: 500px;
@@ -463,5 +460,16 @@ body{
     }
     #signup_validation, .confirm_pass_validator, .signin-validator{
         margin-left: 5px;
+    }
+}
+
+@media (min-width:1024px){
+    body{
+        zoom:1.9    
+    }
+}
+@media (min-width:769px) and (max-width:1024px){
+    body{
+        zoom:2     
     }
 }
