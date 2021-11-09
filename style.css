@@ -5,9 +5,10 @@
     user-select: none;
 }
 body{
-    display: flex;
+    
     align-items: center;
     justify-content: center;
+    display: flex;
     background-color: rgba(163, 193, 201,.3);
 
 }
@@ -300,7 +301,7 @@ body{
 
     }
     .background-container{
-            position: absolute;
+        position: absolute;
         width: 90%;
         height: 40px;
         
@@ -333,7 +334,7 @@ body{
 @media (min-width:390px) and (max-width:420px){
     
     .background-container{
-            position: absolute;
+        position: absolute;
         width: 89%;
         height: 40px;
         
@@ -349,7 +350,7 @@ body{
 @media (min-width:0px) and (max-width:390px){
     
     .background-container{
-            position: absolute;
+        position: absolute;
         width: 87%;
         height: 40px;
         
@@ -429,5 +430,11 @@ body{
     }
     .main-container{
         height: 370px;
+    }
+}
+@media (max-width:768px){
+    .main-container{
+        margin-top: 100px;
+        height: 400px;
     }
 }
