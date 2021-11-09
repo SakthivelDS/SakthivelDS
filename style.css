@@ -440,8 +440,21 @@ body{
         height: 370px;
     }
 }
-@media (max-width:768vpx){
+@media (max-width:768px){
     .main-container{
-        height: 400px;
+        height: 500px;
+    }
+    .sign-container form input{
+        height: 40px;
+        font-size: 16px;    
+    }
+
+    .signup_btn, .signin_btn{
+        height: 40px;
+        width: 50%;
+        font-size: 18px;
+    }
+    #signup_validation, .confirm_pass_validator, .signin-validator{
+        margin-left: 5px;
     }
 }
